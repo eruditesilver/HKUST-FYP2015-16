@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html>
+<meta charset="utf-8"/>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.11.3.js"></script> 
+    <!--script src="fabricjs.js"></script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!--script src="fabricjs-use.js"></script-->
+    <!--script src="graph-common.js"></script-->
+    <!--script src="fabricjs-drag-drop.js"></script-->
+    <script src="js/pdf.js"></script>
+    <!--script src="js/pdf.worker.js"></script-->
+    <script src="js/tag-tool-use.js"></script>
+    <script src="js/js.cookie.js"></script>
+    <!--script src="viewer.js"></script-->
+    <!--link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" /-->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link href="fabricjs-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container" width="100%">
+        <div id="viewer-container">
+            <!--canvas id="canvas-viewer" style="border:1px solid black;"/-->
+            <object id="pdf-viewer" width="100%" height="100%" data="temp_materials/intro_to_pipelined_processor.pdf"></object>
+        </div>
+        <div id="information-container" class="ui-grid-b">
+            <p class="ui-block-a"> </p>
+            <span class="ui-block-b"></span>
+            <span class="ui-block-c"><button data-icon="check" data-iconpos="left" data-inline="true" id="add-new-ppt-asset" style="float: right;">Approve</button></span>
+            <!--span data-icon="check" class="ui-icon-check ui-btn-icon-left" id="add-new-ppt-asset" style="float:right;position:relative;">Approve</!--span-->
+        </div>
+
+        <div id="slider-container">
+            <div id="slider-1" class="ui-grid-b">
+                <div class="page-start-container ui-block-a" style="width:20%;">
+                    <label for="page-start-1">Start:</label>
+                    <input type="text" name="page-start-1" class="page-start" id="page-start-1">
+                </div>
+                <div id="page-slider-1" class="page-range-container ui-block-b" style="width:60%;">
+
+                </div>
+                <div class="page-end-container ui-block-c" style="width:20%;">
+                    <label for="page-end-1">End:</label>
+                    <input type="text" name="page-end-1" class="page-end" id="page-end-1">
+                </div>
+            </div>
+        </div>
+        <button id="add-new-tag">Save</Button>
+    </div>
+
+</body>
+</html>

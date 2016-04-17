@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="utf-8"/>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-1.11.3.js"></script> 
+    <script src="fabricjs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/5.4.6/video.min.js"></script>
+    <script src="videojs/videojs-java.js"></script>
+    <!--link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" /-->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link href="fabricjs-style.css" rel="stylesheet">
+  <!-- Unless using the CDN hosted version, update the URL to the Java JAR -->
+  <script>
+    videojs.options.java.jar = "video-js.jar";
+  </script>
+</head>
+
+<body>
+    <div id="container" width="100%">
+        <div id="viewer-container">
+
+            <!--canvas id="canvas-viewer" style="border:1px solid black;"/-->
+            <!--video  controls>
+                <source src="COMP2611.avi" type="video/avi">
+                <!--source src="COMP2611.mp4" type="video/mp4"-->
+                <!--source src="movie.ogg" type="video/ogg"-->
+                <!-- Your browser does not support the video tag. -->
+            <!--/video-->
+            <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered"
+              controls preload="auto" width="640" height="264"
+              controls
+              data-setup='{ "techOrder": ["java"] }'>
+                 <!--source src="http://video-js.zencoder.com/oceans-clip.mp4" type="video/mp4" /-->
+                 <!--source src="http://video-js.zencoder.com/oceans-clip.webm" type="video/webm" /-->
+                 <source src="COMP2611.avi" type="video/avi" />
+                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+            </video>
+        </div>
+        <button data-icon="plus" data-iconpos="notext" id="add-new-slider">Add</button>
+        <div id="slider-container">
+            <div id="slider-1" class="ui-grid-b">
+                <div class="page-start-container ui-block-a" style="width:20%;">
+                    <label for="page-start-1">Start:</label>
+                    <input type="text" name="page-start-1" class="page-start" id="page-start-1">
+                </div>
+                <div id="page-slider-1" class="page-range-container ui-block-b" style="width:60%;">
+
+                </div>
+                <div class="page-end-container ui-block-c" style="width:20%;">
+                    <label for="page-end-1">End:</label>
+                    <input type="text" name="page-end-1" class="page-end" id="page-end-1">
+                </div>
+            </div>
+        </div>
+        <button id="add-new-tag">Save</Button>
+    </div>
+
+</body>
+</html>
