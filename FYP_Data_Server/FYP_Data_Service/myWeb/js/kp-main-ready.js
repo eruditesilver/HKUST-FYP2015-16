@@ -278,7 +278,9 @@ $(document).ready(function(){
     canvas.renderAll();
   });
 
+  // Draw
   canvas.on('mouse:up', function(o){
+	if (!isDown) return;
     isDown = false;
     var pointer = canvas.getPointer(o.e);
     var endPoint, points;
@@ -383,6 +385,7 @@ $(document).ready(function(){
           canvas.remove(arrow);
         }
       } 
+
       if (object.item(0).flowout.length > 0){
         console.log("out length = " + object.item(0).flowout.length);
         var outarrows = object.item(0).flowout.slice(0);
@@ -396,8 +399,11 @@ $(document).ready(function(){
           canvas.remove(arrow);
         }
 
-        sendKnowledgePointDeletion(object.item(0).get('id'));
-      }else if (object.get('type') === 'Linearrow'){
+        // sendKnowledgePointDeletion(object.item(0).get('id'));
+      }
+
+      sendKnowledgePointDeletion(object.item(0).get('id'));
+    } else if (object.get('type') === 'Linearrow'){
         // check if circle has at least one arrow
         var parent = object.from;
         var child = object.to;
@@ -421,9 +427,11 @@ $(document).ready(function(){
         if (!parentOK && !childOK){
           alert("PLease select a circle/arrow-with-more-than-one-arrow to delete!");
         }
-      }
-      canvas.remove(object);
+      
+      //canvas.remove(object);
     }
+    canvas.remove(object);
+
   });
 
   $("#text").on('click', function (event){
@@ -559,6 +567,12 @@ $(document).ready(function(){
 
 	$("#tab1 a:eq(1)").on('hidden.bs.tab', function (event) {
 		editMode = false;
+		// Unselectable
+        canvas.forEachObject(function(o){ 
+            o.set({
+              selectable: false,
+			});
+		  });
 		console.log("Asset tab on show, editmode = " + editMode);
 	});	
 
