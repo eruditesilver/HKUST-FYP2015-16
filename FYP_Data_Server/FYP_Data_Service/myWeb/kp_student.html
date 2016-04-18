@@ -9,7 +9,7 @@
     <title>COMP4988 CSB1</title>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/Home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--script src="js/jquery-1.11.3.js"></script--> 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -31,14 +31,21 @@
     .navbar-inverse .navbar-brand { color: white }
     </style>
 </head>
+<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="menu-icon">&#9776;</label>
 
+<header>
+<div id="brand" align="center">COMP4988 CSB1</div>
+</header>
+<nav class="menu">
+  <ul>
+      <li><a href="#pageone" onClick="window.location='Home_Stu.html';">Home</a></li>
+        <li><a href="#pagethree" onClick="window.location='kp_student.html';">Knowledge Points Graph</a></li>
+        <li><a href="#pagetwo" onClick="window.location='msg_student.html';">Q&A </a></li>
+        <li><a href="#pagefour">Self Test</a></li>
+    </ul>
+</nav>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-header">
-            <span class="navbar-brand">COMP4988 CSB1</span>
-        </div>
-    </nav>
-
     <div class="container">
         <div class="row">
             <div id="workarea-container" class="ui-block-b">
