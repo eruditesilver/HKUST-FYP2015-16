@@ -352,10 +352,10 @@
 			// undefined???
 			var question = item.question;
 			//console.log("question = " + question);
-			var oneasset = $('<li><a>' + question + '</a></li>');
+			var oneasset = $('<a class="list-group-item" href="#individual-2nd-popup">' + question + '</a>');
 
 			// Add delete button
-			var deleteicon = $('<a href="#" data-icon="delete">Delete</a>');
+			var deleteicon = $('<span class="label label-default pull-right">Delete</span>');
 			deleteicon.on('click', function(event){
 				console.log("Delete On click");
 				var target = item;
