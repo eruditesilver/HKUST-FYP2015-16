@@ -429,11 +429,10 @@ var canvas;
         retrieveNewId(time, handleRetrieveNewId);
       },
       error: function (xhr, ajaxOptions, thrownError) {
-          console.log(xhr.status);
-          console.log("error:  " + thrownError);
+		alert ("Error! " + xhr.status + "(" + thrownError + ")");
       },
       failure: function (response) {
-        console.log(response.d);
+		alert(response.d);
 
       }
     });
@@ -478,7 +477,7 @@ var canvas;
         console.log("[retrieveNewId] success!");
         
       },error: function (xhr, ajaxOptions, thrownError) {
-        console.log("error:  " + thrownError);
+        alert ("Error! " + xhr.status + "(" + thrownError + ")");
       },
     }).done(function(data) {
       var temp = JSON.stringify(data);
@@ -526,7 +525,7 @@ var canvas;
         console.log("[sendKnowledgePointDeletion] success!");
         
       },error: function (xhr, ajaxOptions, thrownError) {
-        console.log("[sendKnowledgePointDeletion] error:  " + thrownError);
+        alert ("[sendKnowledgePointDeletion] error:  " + xhr.status + "(" + thrownError + ")");
       }
     });
     console.log("[sendKnowledgePointDeletion] delete id = " + delete_id);

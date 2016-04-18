@@ -283,8 +283,7 @@
 		  	addNewPoint(JSON.stringify(data));
 		  },
 	      error: function (xhr, ajaxOptions, thrownError) {
-	        alert(xhr.status);
-	        alert(thrownError);
+			alert ("Error! " + xhr.status + "(" + thrownError + ")");
 	      },
           failure: function (response) {
             alert(response.d);
@@ -698,16 +697,17 @@
 			dataType: 'json',     //'application/json',
 			contentType: "application/json",
 			success: function(response){
-			console.log("New json response = " + response);
+				console.log("New json response = " + response);
 				//addNewPoint(data);
+				$("#save").removeClass("disabled");
 			},
 			// BAD REQUEST???
 			error: function (xhr, ajaxOptions, thrownError) {
-			  console.log(xhr.status);
-			  console.log("error:  " + thrownError);
+			  alert ("Error! " + xhr.status + "(" + thrownError + ")");
+			  //console.log(thrownError);
 			},
 			failure: function (response) {
-			console.log(response.d);
+				alert(response.d);
 			}
 		});
 	}

@@ -554,11 +554,10 @@
 		  	displayMessageBox(JSON.stringify(data));
 		  },
 	      error: function (xhr, ajaxOptions, thrownError) {
-	        alert(xhr.status);
-	        alert(thrownError);
+			alert ("Error! " + xhr.status + "(" + thrownError + ")");
 	      },
           failure: function (response) {
-            alert(response.d);
+            alert("Fail! " + response.d);
           }
 		});
 		

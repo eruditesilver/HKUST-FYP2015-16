@@ -15,10 +15,11 @@ $(document).ready(function(){
 	// create SAVE button
 	//var save_button = $('<button id="save">Save</button>');
     $("#save").on('click', function(event) {
+	  $(this).addClass("disabled");
       var json = buildjson(); //canvas.toJSON(['to'], ['from'], ['flowin'], ['flowout']);
       canvas.includeDefaultValues = false;
       console.log("[toJSON] = " + JSON.stringify(json, null, 2));
-      //saveKnowledgePointGraph(json);
+      saveKnowledgePointGraph(json);
       //dragdropMode = false;
       //$("#edit-drag-drop").show();
 	  $('.nav-pills a[href="#1a"]').tab('show');
