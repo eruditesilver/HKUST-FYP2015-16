@@ -55,57 +55,69 @@
 </nav>
 <body>
     <div class="container">
-        <div class="row ">
+        <div class="row col-md-8">
             <div id="workarea-container container">
                 
                 <div style="overflow: scroll;max-height: 480px;">
                     <canvas id="canvas"></canvas>
                 </div>
+                
+                <div>
+                  
+                </div>
               </div>
         </div>
+        <div class="row col-md-4" id="exTab1"> 
+      <ul id="tab1" class="nav nav-pills">
+        <li class="active">
+          <li>
+              <a href="#4a" data-toggle="tab" style="width: 80px;height: 50px"><span class="glyphicon glyphicon-floppy-saved" style="max-width: 20px;max-height: 20px"></span> Graph</a>
+          </li>
+
+          <li>
+              <a  href="#1a" data-toggle="tab" style="width: 80px;height: 50px"><img src="img/course.png"  style="max-width: 20px;max-height: 20px"> Course</a>
+          </li>
+
+          <li>
+              <a href="#2a" data-toggle="tab" style="width: 80px;height: 50px"><img src="img/toolbox.png"  style="max-width: 20px;max-height: 20px"> Toolbox</a>
+                     
+          </li>
         
+          <li>
+              <a href="#3a" data-toggle="tab" style="width: 80px;height: 50px"><img src="img/asset.png"  style="max-width: 20px;max-height: 20px"> Assets</a>
+          </li>
+        </li>
+      </ul>
 
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <button type="button" class="btn btn-primary btn-lg pull-right" id="save"> <span class="glyphicon glyphicon-floppy-saved"></span> Save</button>
+      <div class="tab-content clearfix">
+        <div class="tab-pane" id="4a">
+          <div class="list-group">
+                <br />
+                <a href="#" class="list-group-item btn btn-primary btn-lg"><button type="button" style="width:100%" class="btn btn-primary btn-lg" id="save"> <span class="glyphicon glyphicon-floppy-saved"></span> Save</button></a>
+                <br />
+                <a href="#" class="list-group-item btn btn-primary btn-lg"><button type="button" style="width:100%" class="btn btn-primary btn-lg" id="import"> <span class="glyphicon glyphicon-file"></span> Import</button></a>
+                <br />
+                <a href="#" class="list-group-item btn btn-primary btn-lg"><button type="button" style="width:100%" class="btn btn-primary btn-lg" id="export"> <span class="glyphicon glyphicon-download-alt"></span> Export</button></a>              
             </div>
         </div>
 
-        <div id="exTab1">	
-			<ul id="tab1" class="nav nav-pills">
-				<li class="active">
-					<a  href="#1a" data-toggle="tab"><img src="img/course.png"  style="max-width: 30px;max-height: 30px"> Course</a>
-				</li>
-				<li>
-					<a href="#2a" data-toggle="tab"><img src="img/toolbox.png"  style="max-width: 30px;max-height: 30px"> Toolbox</a>
-                     
-				</li>
-				
-                <li>
-					<a href="#3a" data-toggle="tab"><img src="img/asset.png"  style="max-width: 30px;max-height: 30px"> Assets</a>
-				</li>
-				
-			</ul>
-
-			<div class="tab-content clearfix">
-				<div class="tab-pane active" id="1a">
-					<h3>Show the course list here</h3>
-					<div class="list-group">
-					  <a href="#" id="comp2611" class="list-group-item active">COMP 2611</a>
-					  <li id="comp4611" class="list-group-item">COMP 4611</li>
-					</div>
-				</div>
-				<div class="tab-pane" id="2a">
-					<h3>Show the toolbox here</h3>
+        <div class="tab-pane active" id="1a">
+          <br />
+          <div class="list-group">
+            <a href="#" id="comp2611" class="list-group-item active">COMP 2611</a>
+            <li id="comp4611" class="list-group-item">COMP 4611</li>
+          </div>
+        </div>
+        <div class="tab-pane" id="2a">
+                    <br />
                     <div class="btn-group">
                     <button type="button" class="btn btn-secondary dropdown-toggle tool" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="circle"><img src="img/circle.png"  style="max-width: 30px;max-height: 30px"></button>
                         <div class="dropdown-menu">
                             <a id="High-priority" class="dropdown-item" href="#"><img src="img/high.png"  style="max-width: 30px;max-height: 30px"></a>
                             <a id="Medium-priority" class="dropdown-item" href="#"><img src="img/medium.png"  style="max-width: 30px;max-height: 30px"></a>
                             <a id="Low-priority" class="dropdown-item" href="#"><img src="img/low.png"  style="max-width: 30px;max-height: 30px"></a>
-				        </div>
-				    </div>
+                </div>
+            </div>
                     <div class="btn-group">     
                     <button type="button" class="btn btn-secondary tool" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="arrow"><img src="img/arrow.png" style="max-width: 30px;max-height: 30px"></button>
                     </div>
@@ -126,7 +138,7 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="3a">
-
+                    <br />
                     <div id="material-content" role="tablist" aria-multiselectable="true">
                       <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="list-heading-1">
@@ -153,10 +165,14 @@
                         </div>
                       </div>
                     </div>
-				</div>
-			</div>
+        </div>
+      </div>
+        </div>
+                <div class="row">
+            
         </div>
 
+        
     </div>
 
     <!-- individual Modal -->
