@@ -239,16 +239,13 @@ namespace FYPDataService
                             {
                                 string answerTypeString = (new AnswerTypeTableAdapter()).GetDataById(qa.AnswerType)[0].AnswerType;
                                 Answer answer = new Answer(answerTypeString, qa.Answer);
-                            
+                                message.addAnswer(answer);
                             }
                             catch
                             {
-
-                            }
-                            finally {
                                 message.addAnswer(new Answer(AnswerType.NoAnswer, ""));
-                            }
-                            
+
+                            }                         
                             message.createTime = qa.CreatedTime.ToString("G");
                             kp.messageBox.lastModifiedDate = qa.CreatedTime.ToString("G");
                             kp.addMessage(message);

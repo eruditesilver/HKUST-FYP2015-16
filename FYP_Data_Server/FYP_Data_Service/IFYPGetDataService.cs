@@ -86,11 +86,11 @@ namespace FYPDataService
          [OperationContract]
          [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "marking/{userId}_{selfTestId}_{score}")]
          string markASelfTestRecord(string userId, string score, string selfTestId);
-
+        /*
          [OperationContract]
          [WebInvoke(Method = "POST", UriTemplate = "uploadFile/{courseCode}_{courseNumber}_{folderName}_{filename}")]
          string uploadFile(string courseCode, string courseNumber, string folderName, string filename, Stream stream);
-
+        */
          [OperationContract]
          [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "loginToSystem/{username}_{password}")]
          Person loginToSystem(string username, string password);
