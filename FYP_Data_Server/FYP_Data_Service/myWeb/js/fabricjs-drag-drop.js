@@ -350,10 +350,37 @@
 
 		$.each(messages, function (i, item){
 			// undefined???
+			
 			var question = item.question;
 			//console.log("question = " + question);
 			var oneasset = $('<a class="list-group-item" href="#individual-2nd-popup">' + question + '</a>');
 
+			oneasset.on('click', function(event) {
+				$("#individual-msg-popup-content").empty();
+				var person = item.person;
+				var date = item.create;
+				console.log("item = " + JSON.stringify(item));
+				var anslist = item.ans;
+				
+				var content = person + ": " + question + "</br>";
+				content += "<div style='float:right;font-size:10px'>"+ date +"</div></br>";
+				
+				console.log("anslist = " + anslist.length);
+				$.each(anslist, function (j, ans){
+					//audio part not finished
+					
+					if (ans.type == "Text") {
+						content += "<br />";
+						content += "<span class='professor_answer'>"+ "Answer : "+ ans.content+"</span>";
+					}
+					if (ans.type == "Audio") {
+						//Audio
+					}
+				});
+				$("#individual-msg-popup-content").html(content);
+				
+				$("#individual-msg-popup").modal('show');
+			});
 			// Add delete button
 			var deleteicon = $('<span class="label label-default pull-right">Delete</span>');
 			deleteicon.on('click', function(event){

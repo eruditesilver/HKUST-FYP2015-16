@@ -343,15 +343,19 @@
 			var temp_messagelist = object["Related message in Q&A"]["Message List"];
 			var currentQandAid, currentQandAperson, currentQandAquestion, currentQandAcreatedate;
 			$.each(temp_messagelist, function (i){
+				// reset Ans List
+				currentQandAanslist = [];
 				currentQandAid = temp_messagelist[i]["Q&A ID"];
 				currentQandAperson = temp_messagelist[i]["Ask by"];
 				currentQandAquestion = temp_messagelist[i]["Question"];
 				currentQandAcreatedate = temp_messagelist[i]["Date of create"];
 				var temp_anslist = temp_messagelist[i]["Answer List"];
 				var currentQandAanslist_ans, currentQandAanslist_content, currentQandAanslist_type;
+				console.log("temp_anslist = " + temp_anslist.length);
 				$.each(temp_anslist, function (j){
 					currentQandAanslist_content = temp_anslist[j]["Answer"];
 					currentQandAanslist_type = temp_anslist[j]["Answer type"];
+					//console.log("currentQandAanslist_content = " + currentQandAanslist_content + ", currentQandAanslist_type = " + currentQandAanslist_pe);
 					if (currentQandAanslist_type === "NoAnswer"){
 						console.log("answer type = NoAnswer");
 						// Illegal continue statement
