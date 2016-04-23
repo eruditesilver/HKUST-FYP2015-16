@@ -28,3 +28,9 @@ C:\Users\Alex M Y TO\Downloads\test\FYP_Data_Server\FYP_Data_Service\bin\FYP_Dat
 C:\Users\Alex M Y TO\Downloads\test\FYP_Data_Server\FYP_Data_Service\obj\Debug\FYPDataService.csprojResolveAssemblyReference.cache
 C:\Users\Alex M Y TO\Downloads\test\FYP_Data_Server\FYP_Data_Service\obj\Debug\FYP_Data_Service.dll
 C:\Users\Alex M Y TO\Downloads\test\FYP_Data_Server\FYP_Data_Service\obj\Debug\FYP_Data_Service.pdb
+C:\Users\Silver\Documents\GitHub\HKUST-FYP2015-16\FYP_Data_Server\FYP_Data_Service\bin\FYP_Data_Service.dll.config
+C:\Users\Silver\Documents\GitHub\HKUST-FYP2015-16\FYP_Data_Server\FYP_Data_Service\bin\FYP_Data_Service.dll
+C:\Users\Silver\Documents\GitHub\HKUST-FYP2015-16\FYP_Data_Server\FYP_Data_Service\bin\FYP_Data_Service.pdb
+C:\Users\Silver\Documents\GitHub\HKUST-FYP2015-16\FYP_Data_Server\FYP_Data_Service\obj\Debug\FYPDataService.csprojResolveAssemblyReference.cache
+C:\Users\Silver\Documents\GitHub\HKUST-FYP2015-16\FYP_Data_Server\FYP_Data_Service\obj\Debug\FYP_Data_Service.dll
+C:\Users\Silver\Documents\GitHub\HKUST-FYP2015-16\FYP_Data_Server\FYP_Data_Service\obj\Debug\FYP_Data_Service.pdb
