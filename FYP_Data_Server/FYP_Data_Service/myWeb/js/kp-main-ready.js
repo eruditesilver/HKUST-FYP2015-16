@@ -561,12 +561,12 @@ $(document).ready(function(){
 		console.log("Asset tab on show, dragdropMode = " + dragdropMode);
 	});
 
-	$("#tab1 a:eq(1)").on('shown.bs.tab', function (event) {
+	$("#tab1 a:eq(2)").on('shown.bs.tab', function (event) {
 		editMode = true;
 		console.log("Asset tab on show, editmode = " + editMode);
 	});
 
-	$("#tab1 a:eq(1)").on('hidden.bs.tab', function (event) {
+	$("#tab1 a:eq(2)").on('hidden.bs.tab', function (event) {
 		editMode = false;
 		// Unselectable
         canvas.forEachObject(function(o){ 
