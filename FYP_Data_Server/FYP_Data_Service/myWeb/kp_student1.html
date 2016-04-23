@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" >    
     <!--script src="fabricjs-use.js"></script-->
     <script src="js/graph-common.js"></script>
-    <script src="js/student-graph-new.js"></script>
+    <script src="js/student-graph.js"></script>
     <script src="js/js.cookie.js"></script>
     <!--script src="js/fabricjs-drag-drop.js"></script-->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
@@ -27,6 +27,7 @@
     <link href="css/knowledgepoint-style.css" rel="stylesheet">
 	
     <style>
+    .container {margin-top: 60px ;height:300px}
     .navbar-inverse .navbar-brand { color: white }
     </style>
 </head>
@@ -34,7 +35,7 @@
 <label for="menuToggle" class="menu-icon">&#9776;</label>
 
 <header>
-<div id="brand" align="center">COMP4988 CSB1 KP</div>
+<div id="brand" align="center">COMP4988 CSB1</div>
 </header>
 <nav class="menu">
   <ul>
@@ -49,39 +50,66 @@
         <div class="row">
             <div id="workarea-container" class="ui-block-b">
                 
-                <div style="overflow: hidden;max-height: 800px;">
+                <div style="overflow: scroll;max-height: 800px;">
                     <canvas id="canvas"></canvas>
                 </div>
-				<br />
-				
-				<ul id="student-kp-list" class="list-group col-sm-4">
-					<li> Loading ... </li>
-				</ul>
-				<div id="kp-individual" class="list-group col-sm-8">
-					<div id="kp-individual-header" class="page-header">
-						
-					</div>
-					<ul id="parents"> </ul>
-					<br>
-					<div class="panel panel-default">
-					  <div class="panel-heading"> Assets </div>
-						  <ul id="student-kp-asset" class="list-group">
-							
-						  </ul>
-						<div class="panel-heading"> Messages </div>
-						  <ul id="student-kp-message" class="list-group">
-							
-						  </ul>
-						<div class="panel-heading"> Q&A </div>
-						  <ul id="student-kp-selftest" class="list-group">
-							
-						  </ul>						  
-					</div>
-					
-				</div>
               </div>
         </div>
 
+    <!-- individual Modal -->
+    <div id="individual-popup" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <span id="individual-popup-header" class="popup-header"> </span>
+          </div>
+
+          <div class="modal-body">
+            <div id="individual-content" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="individual-heading-1">
+                  <h4 class="panel-title" data-toggle="collapse" data-parent="#individual-content" href="#popup-asset" aria-expanded="true" aria-controls="popup-asset">
+                      Assets
+                  </h4>
+                </div>
+                <div id="popup-asset" class="assetslist panel-collapse collapse in" role="tabpanel" aria-labelledby="individual-heading-1">
+                    <ul class="list-group">
+                        <li class="list-group-item"> A </li>
+                        <li class="list-group-item"> B </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="individual-heading-2">
+                  <h4 class="panel-title collapsed" data-toggle="collapse" data-parent="#individual-content" href="#popup-message" aria-expanded="false" aria-controls="popup-message">
+                      Q&A Messages
+                  </h4>
+                </div>
+                <div id="popup-message" class="msglist panel-collapse collapse" role="tabpanel" aria-labelledby="individual-heading-2">
+                        
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="individual-heading-3">
+                  <h4 class="panel-title collapsed" data-toggle="collapse" data-parent="#individual-content" href="#popup-selftest" aria-expanded="false" aria-controls="popup-selftest">
+                      Selftests
+                  </h4>
+                </div>
+                <div id="popup-selftest" class="selftestlist panel-collapse collapse" role="tabpanel" aria-labelledby="individual-heading-3">
+                    
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <!-- individual 2nd Modal -->
     <div id="individual-2nd-popup" class="modal fade" role="dialog">
@@ -93,26 +121,6 @@
           </div>
 
           <div id="individual-2nd-popup-content" class="modal-body">
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-	
-    <!-- individual msg Modal -->
-    <div id="individual-msg-popup" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <span id="individual-msg-popup-header" class="popup-header"> </span>
-          </div>
-
-          <div id="individual-msg-popup-content" class="modal-body">
 
           </div>
           <div class="modal-footer">
