@@ -603,6 +603,31 @@
 			var messagehtml = $('<li id="message-'+v.id+'" class="list-group-item" draggable="true">'+v.question+'</li>');
 			messagehtml.on('dragstart', drag);
 			//messagehtml.draggable({ opacity: 0.7, helper: "clone" });
+			messagehtml.on('click', function(event){
+				$("#individual-msg-popup-content").empty();
+				var person = v.person;
+				var date = v.create;
+				console.log("item = " + JSON.stringify(v));
+				var anslist = v.ans;
+						
+				var content = person + ": " + v.question + "</br>";
+				content += "<div style='float:right;font-size:10px'>"+ date +"</div></br>";
+						
+				console.log("anslist = " + anslist.length);
+				$.each(anslist, function (j, ans){
+				//audio part not finished		
+					if (ans.type == "Text") {
+						content += "<br />";
+						content += "<span class='professor_answer'>"+ "Answer : "+ ans.content+"</span>";
+					}
+					if (ans.type == "Audio") {
+						//Audio
+					}
+				});
+				$("#individual-msg-popup-content").html(content);	
+				$("#individual-msg-popup").modal('show');
+			});
+			
 			messagehtml.appendTo($(".all-msglist"));
 		})).done(function (){
 			//;
