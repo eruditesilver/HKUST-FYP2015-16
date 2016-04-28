@@ -50,11 +50,6 @@ $(document).ready(function(){
 
 })
 
-//
-
-function reply_start(){
-	console.log("Start replying");
-}
 
 function div_hide(){
 document.getElementById("reply_msginput").value = "";
@@ -103,9 +98,13 @@ function goBack() {
 		<h2>Answer form</h2>
 	<hr id="asked_question">
 		
-	<input id="reply_msginput" type="text" name="msginput" class="msginput" placeholder="Enter your reply here">
+	<input id="reply_msginput" type="text" name="msginput" class="msginput" onkeydown="if (event.keyCode == 13) {
+		var reply_msg_id = $('#pop_up_student_question').attr('msg_id');
+		instrcutor_reply_message(reply_msg_id);
+		div_hide();
+		}" placeholder="Enter your reply here,press enter to send">
 
-	<button type="submit" class="btn btn-primary" aria-haspopup="true" aria-expanded="false" id="msg_reply">Send</button>
+	<!--button type="submit" class="btn btn-primary" aria-haspopup="true" aria-expanded="false" id="msg_reply">Send</button-->
 	
 	 <span class="floatRight">
 			

@@ -46,13 +46,15 @@ $(document).ready(function() {
 </nav>
 <div class="msg-container">
 	
-	<script>
-function goBack() {
-    window.history.back();
-}
-</script>
+
   <div class="msg-area" id="msg-area"></div>
-	<div class="bottom animated fadeInUp"><input  type="text" name="msginput" class="msginput" id="msginput" onkeydown="if (event.keyCode == 13) send_message()" placeholder="Enter your question here, press enter to send.">
+	<div class="bottom animated fadeInUp"><input  type="text" name="msginput" class="msginput" id="msginput" 
+				onkeydown="if (event.keyCode == 13 && document.getElementById('msginput').value!=='') 
+				{
+					send_message()
+				}" 
+
+				placeholder="Enter your question here, press enter to send.">
 	</div>
 	 <span class="floatRight">
 	<button type="submit" id="msg_send" value="Send"></button>
