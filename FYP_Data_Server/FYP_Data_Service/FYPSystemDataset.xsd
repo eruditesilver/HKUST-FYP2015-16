@@ -857,7 +857,7 @@
   <xs:element name="FYPSystemDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FYPSystemDataset" msprop:Generator_UserDSName="FYPSystemDataset">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="AnswerType" msprop:Generator_TableClassName="AnswerTypeDataTable" msprop:Generator_TableVarName="tableAnswerType" msprop:Generator_TablePropName="AnswerType" msprop:Generator_RowDeletingName="AnswerTypeRowDeleting" msprop:Generator_RowChangingName="AnswerTypeRowChanging" msprop:Generator_RowEvHandlerName="AnswerTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="AnswerTypeRowDeleted" msprop:Generator_UserTableName="AnswerType" msprop:Generator_RowChangedName="AnswerTypeRowChanged" msprop:Generator_RowEvArgName="AnswerTypeRowChangeEvent" msprop:Generator_RowClassName="AnswerTypeRow">
+        <xs:element name="AnswerType" msprop:Generator_TableClassName="AnswerTypeDataTable" msprop:Generator_TableVarName="tableAnswerType" msprop:Generator_RowChangedName="AnswerTypeRowChanged" msprop:Generator_TablePropName="AnswerType" msprop:Generator_RowDeletingName="AnswerTypeRowDeleting" msprop:Generator_RowChangingName="AnswerTypeRowChanging" msprop:Generator_RowEvHandlerName="AnswerTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="AnswerTypeRowDeleted" msprop:Generator_RowClassName="AnswerTypeRow" msprop:Generator_UserTableName="AnswerType" msprop:Generator_RowEvArgName="AnswerTypeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -871,7 +871,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Asset" msprop:Generator_TableClassName="AssetDataTable" msprop:Generator_TableVarName="tableAsset" msprop:Generator_TablePropName="Asset" msprop:Generator_RowDeletingName="AssetRowDeleting" msprop:Generator_RowChangingName="AssetRowChanging" msprop:Generator_RowEvHandlerName="AssetRowChangeEventHandler" msprop:Generator_RowDeletedName="AssetRowDeleted" msprop:Generator_UserTableName="Asset" msprop:Generator_RowChangedName="AssetRowChanged" msprop:Generator_RowEvArgName="AssetRowChangeEvent" msprop:Generator_RowClassName="AssetRow">
+        <xs:element name="Asset" msprop:Generator_TableClassName="AssetDataTable" msprop:Generator_TableVarName="tableAsset" msprop:Generator_RowChangedName="AssetRowChanged" msprop:Generator_TablePropName="Asset" msprop:Generator_RowDeletingName="AssetRowDeleting" msprop:Generator_RowChangingName="AssetRowChanging" msprop:Generator_RowEvHandlerName="AssetRowChangeEventHandler" msprop:Generator_RowDeletedName="AssetRowDeleted" msprop:Generator_RowClassName="AssetRow" msprop:Generator_UserTableName="Asset" msprop:Generator_RowEvArgName="AssetRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -893,7 +893,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="AssetType" msprop:Generator_TableClassName="AssetTypeDataTable" msprop:Generator_TableVarName="tableAssetType" msprop:Generator_TablePropName="AssetType" msprop:Generator_RowDeletingName="AssetTypeRowDeleting" msprop:Generator_RowChangingName="AssetTypeRowChanging" msprop:Generator_RowEvHandlerName="AssetTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="AssetTypeRowDeleted" msprop:Generator_UserTableName="AssetType" msprop:Generator_RowChangedName="AssetTypeRowChanged" msprop:Generator_RowEvArgName="AssetTypeRowChangeEvent" msprop:Generator_RowClassName="AssetTypeRow">
+        <xs:element name="AssetType" msprop:Generator_TableClassName="AssetTypeDataTable" msprop:Generator_TableVarName="tableAssetType" msprop:Generator_RowChangedName="AssetTypeRowChanged" msprop:Generator_TablePropName="AssetType" msprop:Generator_RowDeletingName="AssetTypeRowDeleting" msprop:Generator_RowChangingName="AssetTypeRowChanging" msprop:Generator_RowEvHandlerName="AssetTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="AssetTypeRowDeleted" msprop:Generator_RowClassName="AssetTypeRow" msprop:Generator_UserTableName="AssetType" msprop:Generator_RowEvArgName="AssetTypeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -907,7 +907,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Course" msprop:Generator_TableClassName="CourseDataTable" msprop:Generator_TableVarName="tableCourse" msprop:Generator_TablePropName="Course" msprop:Generator_RowDeletingName="CourseRowDeleting" msprop:Generator_RowChangingName="CourseRowChanging" msprop:Generator_RowEvHandlerName="CourseRowChangeEventHandler" msprop:Generator_RowDeletedName="CourseRowDeleted" msprop:Generator_UserTableName="Course" msprop:Generator_RowChangedName="CourseRowChanged" msprop:Generator_RowEvArgName="CourseRowChangeEvent" msprop:Generator_RowClassName="CourseRow">
+        <xs:element name="Course" msprop:Generator_TableClassName="CourseDataTable" msprop:Generator_TableVarName="tableCourse" msprop:Generator_RowChangedName="CourseRowChanged" msprop:Generator_TablePropName="Course" msprop:Generator_RowDeletingName="CourseRowDeleting" msprop:Generator_RowChangingName="CourseRowChanging" msprop:Generator_RowEvHandlerName="CourseRowChangeEventHandler" msprop:Generator_RowDeletedName="CourseRowDeleted" msprop:Generator_RowClassName="CourseRow" msprop:Generator_UserTableName="Course" msprop:Generator_RowEvArgName="CourseRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -922,7 +922,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="KnowledgePointParentChildRelation" msprop:Generator_TableClassName="KnowledgePointParentChildRelationDataTable" msprop:Generator_TableVarName="tableKnowledgePointParentChildRelation" msprop:Generator_TablePropName="KnowledgePointParentChildRelation" msprop:Generator_RowDeletingName="KnowledgePointParentChildRelationRowDeleting" msprop:Generator_RowChangingName="KnowledgePointParentChildRelationRowChanging" msprop:Generator_RowEvHandlerName="KnowledgePointParentChildRelationRowChangeEventHandler" msprop:Generator_RowDeletedName="KnowledgePointParentChildRelationRowDeleted" msprop:Generator_UserTableName="KnowledgePointParentChildRelation" msprop:Generator_RowChangedName="KnowledgePointParentChildRelationRowChanged" msprop:Generator_RowEvArgName="KnowledgePointParentChildRelationRowChangeEvent" msprop:Generator_RowClassName="KnowledgePointParentChildRelationRow">
+        <xs:element name="KnowledgePointParentChildRelation" msprop:Generator_TableClassName="KnowledgePointParentChildRelationDataTable" msprop:Generator_TableVarName="tableKnowledgePointParentChildRelation" msprop:Generator_RowChangedName="KnowledgePointParentChildRelationRowChanged" msprop:Generator_TablePropName="KnowledgePointParentChildRelation" msprop:Generator_RowDeletingName="KnowledgePointParentChildRelationRowDeleting" msprop:Generator_RowChangingName="KnowledgePointParentChildRelationRowChanging" msprop:Generator_RowEvHandlerName="KnowledgePointParentChildRelationRowChangeEventHandler" msprop:Generator_RowDeletedName="KnowledgePointParentChildRelationRowDeleted" msprop:Generator_RowClassName="KnowledgePointParentChildRelationRow" msprop:Generator_UserTableName="KnowledgePointParentChildRelation" msprop:Generator_RowEvArgName="KnowledgePointParentChildRelationRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -931,7 +931,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Priority" msprop:Generator_TableClassName="PriorityDataTable" msprop:Generator_TableVarName="tablePriority" msprop:Generator_TablePropName="Priority" msprop:Generator_RowDeletingName="PriorityRowDeleting" msprop:Generator_RowChangingName="PriorityRowChanging" msprop:Generator_RowEvHandlerName="PriorityRowChangeEventHandler" msprop:Generator_RowDeletedName="PriorityRowDeleted" msprop:Generator_UserTableName="Priority" msprop:Generator_RowChangedName="PriorityRowChanged" msprop:Generator_RowEvArgName="PriorityRowChangeEvent" msprop:Generator_RowClassName="PriorityRow">
+        <xs:element name="Priority" msprop:Generator_TableClassName="PriorityDataTable" msprop:Generator_TableVarName="tablePriority" msprop:Generator_RowChangedName="PriorityRowChanged" msprop:Generator_TablePropName="Priority" msprop:Generator_RowDeletingName="PriorityRowDeleting" msprop:Generator_RowChangingName="PriorityRowChanging" msprop:Generator_RowEvHandlerName="PriorityRowChangeEventHandler" msprop:Generator_RowDeletedName="PriorityRowDeleted" msprop:Generator_RowClassName="PriorityRow" msprop:Generator_UserTableName="Priority" msprop:Generator_RowEvArgName="PriorityRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -945,14 +945,14 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QandA" msprop:Generator_TableClassName="QandADataTable" msprop:Generator_TableVarName="tableQandA" msprop:Generator_TablePropName="QandA" msprop:Generator_RowDeletingName="QandARowDeleting" msprop:Generator_RowChangingName="QandARowChanging" msprop:Generator_RowEvHandlerName="QandARowChangeEventHandler" msprop:Generator_RowDeletedName="QandARowDeleted" msprop:Generator_UserTableName="QandA" msprop:Generator_RowChangedName="QandARowChanged" msprop:Generator_RowEvArgName="QandARowChangeEvent" msprop:Generator_RowClassName="QandARow">
+        <xs:element name="QandA" msprop:Generator_TableClassName="QandADataTable" msprop:Generator_TableVarName="tableQandA" msprop:Generator_RowChangedName="QandARowChanged" msprop:Generator_TablePropName="QandA" msprop:Generator_RowDeletingName="QandARowDeleting" msprop:Generator_RowChangingName="QandARowChanging" msprop:Generator_RowEvHandlerName="QandARowChangeEventHandler" msprop:Generator_RowDeletedName="QandARowDeleted" msprop:Generator_RowClassName="QandARow" msprop:Generator_UserTableName="QandA" msprop:Generator_RowEvArgName="QandARowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
-              <xs:element name="Question" msprop:Generator_ColumnVarNameInTable="columnQuestion" msprop:Generator_ColumnPropNameInRow="Question" msprop:Generator_ColumnPropNameInTable="QuestionColumn" msprop:Generator_UserColumnName="Question">
+              <xs:element name="Question" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Question" msprop:Generator_ColumnVarNameInTable="columnQuestion" msprop:Generator_ColumnPropNameInTable="QuestionColumn" msprop:Generator_UserColumnName="Question">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
+                    <xs:maxLength value="500" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -971,7 +971,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="SelfTest" msprop:Generator_TableClassName="SelfTestDataTable" msprop:Generator_TableVarName="tableSelfTest" msprop:Generator_TablePropName="SelfTest" msprop:Generator_RowDeletingName="SelfTestRowDeleting" msprop:Generator_RowChangingName="SelfTestRowChanging" msprop:Generator_RowEvHandlerName="SelfTestRowChangeEventHandler" msprop:Generator_RowDeletedName="SelfTestRowDeleted" msprop:Generator_UserTableName="SelfTest" msprop:Generator_RowChangedName="SelfTestRowChanged" msprop:Generator_RowEvArgName="SelfTestRowChangeEvent" msprop:Generator_RowClassName="SelfTestRow">
+        <xs:element name="SelfTest" msprop:Generator_TableClassName="SelfTestDataTable" msprop:Generator_TableVarName="tableSelfTest" msprop:Generator_RowChangedName="SelfTestRowChanged" msprop:Generator_TablePropName="SelfTest" msprop:Generator_RowDeletingName="SelfTestRowDeleting" msprop:Generator_RowChangingName="SelfTestRowChanging" msprop:Generator_RowEvHandlerName="SelfTestRowChangeEventHandler" msprop:Generator_RowDeletedName="SelfTestRowDeleted" msprop:Generator_RowClassName="SelfTestRow" msprop:Generator_UserTableName="SelfTest" msprop:Generator_RowEvArgName="SelfTestRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -992,7 +992,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="UserResultInSelfTest" msprop:Generator_TableClassName="UserResultInSelfTestDataTable" msprop:Generator_TableVarName="tableUserResultInSelfTest" msprop:Generator_TablePropName="UserResultInSelfTest" msprop:Generator_RowDeletingName="UserResultInSelfTestRowDeleting" msprop:Generator_RowChangingName="UserResultInSelfTestRowChanging" msprop:Generator_RowEvHandlerName="UserResultInSelfTestRowChangeEventHandler" msprop:Generator_RowDeletedName="UserResultInSelfTestRowDeleted" msprop:Generator_UserTableName="UserResultInSelfTest" msprop:Generator_RowChangedName="UserResultInSelfTestRowChanged" msprop:Generator_RowEvArgName="UserResultInSelfTestRowChangeEvent" msprop:Generator_RowClassName="UserResultInSelfTestRow">
+        <xs:element name="UserResultInSelfTest" msprop:Generator_TableClassName="UserResultInSelfTestDataTable" msprop:Generator_TableVarName="tableUserResultInSelfTest" msprop:Generator_RowChangedName="UserResultInSelfTestRowChanged" msprop:Generator_TablePropName="UserResultInSelfTest" msprop:Generator_RowDeletingName="UserResultInSelfTestRowDeleting" msprop:Generator_RowChangingName="UserResultInSelfTestRowChanging" msprop:Generator_RowEvHandlerName="UserResultInSelfTestRowChangeEventHandler" msprop:Generator_RowDeletedName="UserResultInSelfTestRowDeleted" msprop:Generator_RowClassName="UserResultInSelfTestRow" msprop:Generator_UserTableName="UserResultInSelfTest" msprop:Generator_RowEvArgName="UserResultInSelfTestRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_UserColumnName="UserId" type="xs:int" />
@@ -1008,7 +1008,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="KnowledgePointAssetRelation" msprop:Generator_TableClassName="KnowledgePointAssetRelationDataTable" msprop:Generator_TableVarName="tableKnowledgePointAssetRelation" msprop:Generator_RowChangedName="KnowledgePointAssetRelationRowChanged" msprop:Generator_TablePropName="KnowledgePointAssetRelation" msprop:Generator_RowDeletingName="KnowledgePointAssetRelationRowDeleting" msprop:Generator_RowChangingName="KnowledgePointAssetRelationRowChanging" msprop:Generator_RowEvHandlerName="KnowledgePointAssetRelationRowChangeEventHandler" msprop:Generator_RowDeletedName="KnowledgePointAssetRelationRowDeleted" msprop:Generator_RowClassName="KnowledgePointAssetRelationRow" msprop:Generator_UserTableName="KnowledgePointAssetRelation" msprop:Generator_RowEvArgName="KnowledgePointAssetRelationRowChangeEvent">
+        <xs:element name="KnowledgePointAssetRelation" msprop:Generator_TableClassName="KnowledgePointAssetRelationDataTable" msprop:Generator_TableVarName="tableKnowledgePointAssetRelation" msprop:Generator_TablePropName="KnowledgePointAssetRelation" msprop:Generator_RowDeletingName="KnowledgePointAssetRelationRowDeleting" msprop:Generator_RowChangingName="KnowledgePointAssetRelationRowChanging" msprop:Generator_RowEvHandlerName="KnowledgePointAssetRelationRowChangeEventHandler" msprop:Generator_RowDeletedName="KnowledgePointAssetRelationRowDeleted" msprop:Generator_UserTableName="KnowledgePointAssetRelation" msprop:Generator_RowChangedName="KnowledgePointAssetRelationRowChanged" msprop:Generator_RowEvArgName="KnowledgePointAssetRelationRowChangeEvent" msprop:Generator_RowClassName="KnowledgePointAssetRelationRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CourseId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCourseId" msprop:Generator_ColumnPropNameInRow="CourseId" msprop:Generator_ColumnPropNameInTable="CourseIdColumn" msprop:Generator_UserColumnName="CourseId" type="xs:int" />
@@ -1019,7 +1019,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="KnowledgePoint" msprop:Generator_TableClassName="KnowledgePointDataTable" msprop:Generator_TableVarName="tableKnowledgePoint" msprop:Generator_RowChangedName="KnowledgePointRowChanged" msprop:Generator_TablePropName="KnowledgePoint" msprop:Generator_RowDeletingName="KnowledgePointRowDeleting" msprop:Generator_RowChangingName="KnowledgePointRowChanging" msprop:Generator_RowEvHandlerName="KnowledgePointRowChangeEventHandler" msprop:Generator_RowDeletedName="KnowledgePointRowDeleted" msprop:Generator_RowClassName="KnowledgePointRow" msprop:Generator_UserTableName="KnowledgePoint" msprop:Generator_RowEvArgName="KnowledgePointRowChangeEvent">
+        <xs:element name="KnowledgePoint" msprop:Generator_TableClassName="KnowledgePointDataTable" msprop:Generator_TableVarName="tableKnowledgePoint" msprop:Generator_TablePropName="KnowledgePoint" msprop:Generator_RowDeletingName="KnowledgePointRowDeleting" msprop:Generator_RowChangingName="KnowledgePointRowChanging" msprop:Generator_RowEvHandlerName="KnowledgePointRowChangeEventHandler" msprop:Generator_RowDeletedName="KnowledgePointRowDeleted" msprop:Generator_UserTableName="KnowledgePoint" msprop:Generator_RowChangedName="KnowledgePointRowChanged" msprop:Generator_RowEvArgName="KnowledgePointRowChangeEvent" msprop:Generator_RowClassName="KnowledgePointRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />

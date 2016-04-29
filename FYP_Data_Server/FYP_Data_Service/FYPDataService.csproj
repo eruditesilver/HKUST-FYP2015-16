@@ -88,8 +88,10 @@
     <Content Include="App_Data\UserInfo_log.ldf">
       <DependentUpon>UserInfo.mdf</DependentUpon>
     </Content>
-    <Content Include="Asset\COMP_2611\Lecture_1\L1.pdf" />
+    <Content Include="Asset\COMP_2611\Lecture_1\L1-introduction.pdf" />
+    <Content Include="Asset\COMP_2611\Lecture_1\comp2611_data_representation_Spring2016.pdf" />
     <None Include="FYPGetDataService.svc" />
+    <Content Include="Asset\COMP_2611\Lecture_1\Lecture1.mp4" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

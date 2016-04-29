@@ -2583,7 +2583,7 @@ namespace FYPDataService {
                 this.columnId.ReadOnly = true;
                 this.columnId.Unique = true;
                 this.columnQuestion.AllowDBNull = false;
-                this.columnQuestion.MaxLength = 50;
+                this.columnQuestion.MaxLength = 500;
                 this.columnAskedBy.AllowDBNull = false;
                 this.columnAnswer.MaxLength = 2147483647;
                 this.columnCreatedTime.AllowDBNull = false;
