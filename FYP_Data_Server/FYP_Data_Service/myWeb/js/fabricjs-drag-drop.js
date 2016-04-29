@@ -748,15 +748,15 @@
 			// for fileupload simulate
 			var id = 3000;
 			var temp_filename = path.substring(path.lastIndexOf("/") +1) ;
-			if (temp_filename === "COMP2611.mp4"){
-				id = 3006;
-			}else if (temp_filename === "intro.pdf"){
-				id = 3005;
-			}else if (temp_filename === "L1.pdf"){
+			if (temp_filename === "comp2611_data_representation_Spring2016.pdf"){
+				id = 3018;
+			}else if (temp_filename === "Lecture1.mp4"){
+				id = 3019;
+			}/*else if (temp_filename === "L1.pdf"){
 				id = 3000;
 			}else if (temp_filename === "sample.wav"){
 				id = 3007;
-			}
+			}*/
 
 			var oneasset = new asset(id/*i*//*-1*/, assetsURL+temp_filename , type, -1, -1, null, null);
 			console.log("[createAssetList] Name(path) = " + temp_filename + "(" + path + "), id = " + id);
